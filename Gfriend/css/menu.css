@@ -1,0 +1,44 @@
+@import 'estilo.css';
+.list_menu{
+    background-color: #00B3C9;
+    grid-area: menu;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: 'menu menu busqueda';
+}
+
+.list_menu ul{
+    margin-left: 50px;
+    grid-area: menu;
+}
+
+.list_menu ul > li{
+    display: inline;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+ul li > a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+input{
+    border-radius: 10px;
+    float: right;
+    width: 100%;
+    margin-right: 50px;
+    border: none;
+    padding: 5px;
+}
+
+form{
+    
+    grid-area: busqueda;
+}

@@ -1,0 +1,86 @@
+@import 'estilo.css';
+.discografia{
+    grid-area: discografia;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.dis_contenedor{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+
+.dis_discos{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    margin-bottom: 20px;
+    margin-left: -50px;
+}
+.dis_info{
+    background-color: #00B3C9;
+    font-size: 12px;
+    padding: 20px 15px 15px 45px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.dis_info ul li{
+    margin-bottom: 2px;
+}
+.dis_img{
+    position: relative;
+    left: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+.dis_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px -6px;
+}
+
+.discografia > h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5E498A;
+    border-bottom: solid;
+}
+
+.dis_info h3{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .dis_contenedor{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+
+    .dis_discos{
+        margin-left: 0;
+    }
+    
+    .dis_info{
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    .dis_img{
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .dis_img > img{
+        box-shadow:  none;
+        border: solid;
+        border-color: #5E498A;
+    }
+}
+

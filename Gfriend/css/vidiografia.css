@@ -1,0 +1,56 @@
+@import 'estilo.css';
+.videigrafia{
+    grid-area: videografia;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.video_contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.video_mv{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 140px 23px;
+}
+
+.video_mv img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.video_mv h3{
+    background-color: #00B3C9;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.videigrafia h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5E498A;
+    border-bottom: solid;
+}
+
+@media only screen and (max-width: 650px) {
+    .video_contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .video_mv{
+        display: grid;
+        grid-template-rows: 200px 23px;
+    }
+
+    .video_mv img{
+        height: 200px;
+        object-fit: cover;
+    }
+
+}

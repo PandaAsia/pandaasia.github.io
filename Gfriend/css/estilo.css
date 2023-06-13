@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+	grid-template-areas: 'slider slider'
+						 'menu   menu';
+}
+
+main{
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.contenedor{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	grid-template-areas: "informacion informacion informacion"
+						 "carrera     carrera     carrera"
+						 "integrantes integrantes galleria"
+						 "discografia discografia galleria"
+						 "videografia videografia galleria";
+	background-color: #EDEDED;
+}
+
+ul{
+	list-style: none;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+	header{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 'menu   menu'
+							 'slider slider';
+	}
+
+	.contenedor{
+		grid-template-areas: "informacion informacion informacion"
+						 "carrera     carrera     carrera"
+						 "integrantes integrantes integrantes"
+						 "discografia discografia discografia"
+						 "videografia videografia videografia"
+						 "galleria    galleria    galleria";
+	}
+
+	main{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+}

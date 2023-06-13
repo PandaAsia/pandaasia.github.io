@@ -1,0 +1,36 @@
+@import 'estilo.css';
+.carrera{
+    grid-area: carrera;
+    padding: 10px 20px 10px 20px; 
+}
+
+.carrera > h2{
+    background-color: #5E498A;
+    border-radius: 30px;
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+    margin: 10px 600px -30px 80px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.car_info{
+    border: solid;
+    padding: 50px 70px 30px 70px;
+    border-radius: 20px;
+    border-width: 5px;;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 650px) {
+    .car_info{
+        padding: 45px 20px 20px 20px;
+    }
+
+    .carrera > h2{
+        margin: 0 0 -30px 0;
+        font-size: 25px;
+    }
+}

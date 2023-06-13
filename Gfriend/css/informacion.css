@@ -1,0 +1,63 @@
+@import 'estilo.css';
+.informacion{
+    
+    grid-area: informacion;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.inf_datos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "datos img img" ;
+    background: #00B3C9;
+}
+
+.datos{
+    width: 100%;
+    grid-area: datos;
+    padding: 30px;
+    font-size: 18px;
+    font-size: 16px;
+}
+
+.inf_img{
+    width: 100%;
+    height: auto;
+    grid-area: img;
+    background-image: url(../img/gfriend.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.datos > ul li{
+    margin-bottom: 5px;
+}
+
+.informacion h1{
+    text-align: center;
+    margin: 25px 155px 25px 155px;
+    color: #5E498A;
+    border-bottom: solid;
+    font-size: 50px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .inf_datos{
+        grid-template-columns: 1fr;
+        grid-template-areas: "img   img   img" 
+                             "datos datos datos";
+    }
+
+    .inf_img{
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+
+
